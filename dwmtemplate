@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. ~/.profile
+
+TEMPLATEDIR="$HOME/.local/share/dwmtemplate"
+TEMPLATE="$(cat $TEMPLATEDIR/$1)"
+
+IFS='
+'
+for l in $TEMPLATE; do
+	echo $l | xargs xdotool
+done
