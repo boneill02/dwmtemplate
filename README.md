@@ -16,8 +16,8 @@ once.
 
 ## Example
 
-The following will open Firefox in tag 1 (assuming default dwm keybindings) and
-open github.com:
+The following will open Firefox in tag 1 (using Super key as default modifier
+and default keybindings) and open github.com:
 
 ```
 key Super_L+1
