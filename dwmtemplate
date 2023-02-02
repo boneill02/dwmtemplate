@@ -8,5 +8,5 @@ TEMPLATE="$(cat $TEMPLATEDIR/$1)"
 IFS='
 '
 for l in $TEMPLATE; do
-	echo $l | xargs xdotool
+	echo $l | sed 's/\(^\|[^\\]\)\#.*//g' | xargs xdotool
 done

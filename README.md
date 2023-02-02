@@ -20,11 +20,10 @@ The following will open Firefox in tag 1 (using Super key as default modifier
 and default keybindings) and open github.com:
 
 ```
-key Super_L+1
-exec firefox "https://github.com"
+key Super_L+1 # switch to tag 1
+exec firefox "https://github.com" # open github.com in firefox
 ```
 
 ## TODO
 
 * Add support for shell variables in template files
-* Add support for comments
