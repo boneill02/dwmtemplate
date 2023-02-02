@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ~/.profile
+[ -z "$1" ] && echo "usage: $0 file" 1>&2 && exit 1
 
 TEMPLATEDIR="$HOME/.local/share/dwmtemplate"
 TEMPLATE="$(cat $TEMPLATEDIR/$1)"
