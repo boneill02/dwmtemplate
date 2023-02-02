@@ -9,7 +9,7 @@ clean:
 
 dist:
 	mkdir -p dwmtemplate-$(VERSION)
-	cp -rf dwmtemplate examples/ README.md LICENSE config.mk Makefile dwmtemplate-$(VERSION)
+	cp -rf dwmtemplate README.md LICENSE config.mk Makefile dwmtemplate-$(VERSION)
 	tar -cf dwmtemplate-$(VERSION).tar dwmtemplate-$(VERSION)
 	gzip dwmtemplate-$(VERSION).tar
 	rm -rf dwmtemplate-$(VERSION)
