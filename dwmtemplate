@@ -3,10 +3,9 @@
 [ -z "$1" ] && echo "usage: $0 file" 1>&2 && exit 1
 
 TEMPLATEDIR="$HOME/.local/share/dwmtemplate"
-TEMPLATE="$(cat $TEMPLATEDIR/$1)"
 
 IFS='
 '
-for l in $TEMPLATE; do
-	echo $l | sed 's/\(^\|[^\\]\)\#.*//g' | xargs xdotool
+for l in $(cat "$TEMPLATEDIR/$1"); do
+	echo $l | sed 's/\(^\|[^\\]\)\#.*//' | xargs xdotool
 done
