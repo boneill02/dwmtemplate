@@ -16,14 +16,10 @@ once.
 
 ## Example
 
-The following will open Firefox in tag 1 (using Super key as default modifier
-and default keybindings) and open github.com:
+The following will open the default browser in tag 1 (using Super key as
+default modifier and default keybindings) and open github.com:
 
 ```
 key Super_L+1 # switch to tag 1
-exec firefox "https://github.com" # open github.com in firefox
+exec $BROWSER "https://github.com" # open github.com in default browser
 ```
-
-## TODO
-
-* Add support for shell variables in template files

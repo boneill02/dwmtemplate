@@ -7,5 +7,5 @@ TEMPLATEDIR="$HOME/.local/share/dwmtemplate"
 IFS='
 '
 for l in $(cat "$TEMPLATEDIR/$1"); do
-	echo $l | sed 's/\(^\|[^\\]\)\#.*//' | xargs xdotool
+	echo $l | sed 's/\(^\|[^\\]\)\#.*//' | envsubst | xargs xdotool
 done
