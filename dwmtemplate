@@ -4,6 +4,13 @@
 
 TEMPLATEDIR="$HOME/.local/share/dwmtemplate"
 
+while getopts "d:" opt; do
+	case $opt in
+		d) TEMPLATEDIR=$OPTARG;;
+	esac
+done
+shift $((OPTIND-1))
+
 IFS='
 '
 for l in $(cat "$TEMPLATEDIR/$1"); do
