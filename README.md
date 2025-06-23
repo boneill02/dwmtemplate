@@ -1,18 +1,25 @@
 # dwmtemplate: Macro system for dwm
 
-This program allows dwm users to create, store, and run macros in dwm,
-which are useful if the user switches between similar programs and window
-layouts often.
+This program allows dwm users to create, store, and run macros (templates)
+in dwm.
+
+## Building
+
+```
+sudo make install
+```
 
 ## Usage
 
-* `sudo make install`
-* Create the directory `~/.local/share/dwmtemplate` and store template files in
-there.
-* Each macro template is a list of `xdotool` commands, which will be run at
-once.
-* Run a macro by executing `dwmtemplate [filename]` (using relative path to
-`~/.local/share/dwmtemplate`).
+```
+dwmtemplate [-d directory] template
+```
+
+* Each template is a list of [xdotool](https://github.com/jordansissel/xdotool)
+  commands, which will be run at once.
+* Use the `-d` flag to change the directory to look for templates in.
+* Templates are stored in `~/.local/share/dwmtemplate` by default
+
 
 ## Example
 
