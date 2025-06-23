@@ -1,7 +1,7 @@
 # dwmtemplate: Macro system for dwm
 
 This program allows dwm users to create, store, and run macros (templates)
-in dwm.
+in [dwm](https://dwm.suckless.org/) (or any other window manager).
 
 ## Building
 
