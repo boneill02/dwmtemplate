@@ -30,3 +30,16 @@ default modifier and default keybindings) and open github.com:
 key Super_L+1 # switch to tag 1
 exec $BROWSER "https://github.com" # open github.com in default browser
 ```
+
+## Further Reading
+
+[xdotool(1) on Ubuntu manuals](https://manpages.ubuntu.com/manpages/jammy/man1/xdotool.1.html)
+
+## Bugs
+
+If you find a bug, submit an issue, PR, or email me with a description and/or patch.
+
+## License
+
+Copyright (c) 2025 Ben O'Neill <ben@oneill.sh>. This work is released under the
+terms of the MIT License. See [LICENSE](LICENSE) for the license terms.
